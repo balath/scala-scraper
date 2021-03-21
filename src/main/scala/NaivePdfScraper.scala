@@ -10,8 +10,8 @@ object NaivePdfScraper extends App{
 
   val logger = Logger("Downloads")
   val LINKS_SELECTOR = "a[href]"
-  val baseUrl = "https://www.uv.es/ivorra/Libros/"
-  val targetUrl = "https://www.uv.es/ivorra/Libros/Libros.htm"
+  val baseUrl = "http://cs.brown.edu/people/rtamassi/gdhandbook/"
+  val targetUrl = "http://cs.brown.edu/people/rtamassi/gdhandbook/"
   val localPath = "C:\\Learn\\libros-de-mates\\"  //Local path must exist
   val downloadableLinks = appendRootUrl(baseUrl, getLinks(targetUrl)) //Use this value when links are relative paths
   //val downloadableLinks = getLinks(targetUrl) //Use this value when links are absolute paths
